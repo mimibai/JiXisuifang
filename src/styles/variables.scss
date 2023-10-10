@@ -1,0 +1,48 @@
+// sidebar
+$menuText:#bfcbd9;
+$menuActiveText:#409EFF;
+$subMenuActiveText:#f4f4f5; //https://github.com/ElemeFE/element/issues/12951
+$menuBg:#304156;
+$menuHover:#263445;
+$subMenuBg:#1f2d3d;
+$subMenuHover:#001528;
+$sideBarWidth: 210px;
+// patientSidebar
+$patientMenuText:#333333;
+$patientMenuActiveText:#B2642A;
+$patientSubMenuActiveText:#B2642A; //https://github.com/ElemeFE/element/issues/12951
+$patientMenuBg:#fff;
+$patientMenuHover:#ecf5ff;
+$patientSubMenuBg:#1f2d3d;
+$patientSubMenuHover:#001528;
+//common
+$bg: #B2642A;
+$activeBg:#d87d39;
+//header
+$fontColor:#fff;
+$searchBg:#d87d39;
+$lightGray: #ddd;
+
+
+// the :export directive is the magic sauce for webpack
+// https://www.bluematador.com/blog/how-to-share-variables-between-js-and-sass
+:export {
+  bg: $bg;
+  menuText: $menuText;
+  menuActiveText: $menuActiveText;
+  subMenuActiveText: $subMenuActiveText;
+  menuBg: $menuBg;
+  menuHover: $menuHover;
+  subMenuBg: $subMenuBg;
+  subMenuHover: $subMenuHover;
+  sideBarWidth: $sideBarWidth;
+  fontColor: $fontColor;
+  searchBg: $searchBg;
+  patientMenuText: $patientMenuText;
+  patientMenuActiveText: $patientMenuActiveText;
+  patientSubMenuActiveText: $patientSubMenuActiveText;
+  patientMenuHover: $patientMenuHover;
+  patientSubMenuBg: $patientSubMenuBg;
+  patientSubMenuHover: $patientSubMenuHover;
+  progressColor:$bg;
+}

@@ -1,0 +1,53 @@
+$cursor: #c37032;
+@import "~@/styles/variables.scss";
+@supports (-webkit-mask: none) and (not (cater-color: $cursor)) {
+  .login-container .el-input input {
+    color: $cursor;
+  }
+}
+/* reset element-ui css */
+.login {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  .login-container {
+    padding-bottom: 50px;
+    background: #fff;
+    .el-input {
+      display: inline-block;
+      height: 47px;
+      width: 85%;
+      input {
+        background: transparent;
+        border: 0px;
+        -webkit-appearance: none;
+        border-radius: 0px;
+        padding: 12px 5px 12px 15px;
+        height: 47px;
+        color: $bg;
+        &:-webkit-autofill {
+          box-shadow: 0 0 0px 1000px #ffffff inset !important;
+          -webkit-text-fill-color: $bg !important;
+        }
+      }
+    }
+    .el-form-item {
+      border: 1px solid #e8e8ee;
+      background: #ffffff;
+      border-radius: 5px;
+      color: #454545;
+      &:focus {
+        border-color: $bg;
+      }
+    }
+    .svg-container {
+        padding: 6px 5px 6px 15px;
+        color: $bg;
+        vertical-align: middle;
+        width: 30px;
+        display: inline-block;
+      }
+  
+  }
+}
